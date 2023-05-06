@@ -1,9 +1,51 @@
 .nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #f9f9fa;
-    padding: 20px 40px;
+    padding: 20px 45px;
+    /* 니코는 매직라인 border-box을 왜 썼을까?
+    CSS에게 box-size를 변경하지 말라고 알려줘야해*/
+    box-sizing: border-box;
+    /* box-sizing: border-box를 쓰는 이유야
+    왜냐면 padding을 주고 싶은데, box사이즈는 그대로이길 바라니까 */
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
 }
 
 .nav__list {
     display: flex;
     justify-content: space-between;
+}
+
+.nav__link {
+    /* 기억해! position: absolute는... */
+    position: relative;
+    color: #716f6f;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    /* 기억해! position: absolute는 relative가 있는 가장 가까운 부모(.nav__link) 기준으로 움직이는 거야. */
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+}
+
+.nav__point {
+    background-color: tomato;
+    color: tomato;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
 }
