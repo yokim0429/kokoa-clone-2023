@@ -4,8 +4,23 @@
   align-items: center;
 }
 
-/* .user-component__avatar {
+.user-component__avatar {
     width: 70px;
     height: 70px;
-    border-radius: 27px;
-} */
+    border-radius: 30px;
+    margin-right: 20px;
+    /* 사진 크기 변경시, 텍스처 그대로 유지하기 위해
+    object-fit: cover; */
+    object-fit: cover;
+}
+
+.user-component__title {
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.user-component__subtitle {
+    margin-top: 8px;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
