@@ -2,9 +2,15 @@
     text-align: center;
     display: block;
     background-color: rgba(0, 0, 0, 0.05);
-    padding: 10px 0px;
+    padding: 12px 0px;
+    font-size: 17px;
+    margin-bottom: 10px;
 }
 
 #friends-display-link i {
     color: rgba(0, 0, 0, 0.4);
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
 }
