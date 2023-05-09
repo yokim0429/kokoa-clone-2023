@@ -1,3 +1,6 @@
+.user-component {
+    justify-content: space-between;
+}
 .user-component,
 .user-component__column:first-child {
   display: flex;
@@ -33,4 +36,18 @@
     /* 사진 크기 변경시, 텍스처 그대로 유지하기 위해
     object-fit: cover; */
     object-fit: cover;
+}
+
+.user-component__avatar--sm {
+    width: 60px;
+    height: 60px;
+    border-radius: 23px;
+}
+
+.user-component__title--not-bold {
+    font-weight: 300;
+}
+
+.user-component__column:last-child {
+    color: rgba(0, 0, 0, 0.5);
 }
