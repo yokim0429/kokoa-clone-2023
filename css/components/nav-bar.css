@@ -24,15 +24,6 @@
 }
 
 .nav__notification {
-    background-color: tomato;
-    width: 25px;
-    height: 25px;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-weight: 900;
     /* 기억해! position: absolute는 relative가 있는 가장 가까운 부모(.nav__link) 기준으로 움직이는 거야. */
     position: absolute;
     left: 15px;
