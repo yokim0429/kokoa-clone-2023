@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Find - Yokia Clone</title>
+    <title>More - Yokia Clone</title>
 
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
     <script
       src="https://kit.fontawesome.com/7b2bd2d778.js"
       crossorigin="anonymous"
@@ -30,72 +31,71 @@
     </div>
     <!-- screen-header -->
     <header class="screen-header">
-      <h1 class="screen-header__title">Find</h1>
+      <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <!-- <span><i class="fa-regular fa-comment fa-lg"></i></span> -->
-        <!-- <span><i class="fas fa-music fa-lg"></i></span> -->
+        <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
     <!-- Friends-Display-Link -->
     <!-- Chats-Screen -->
-    <main class="main-screen">
+    <!-- Main-Screen-->
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="screenshots/profile0429.png"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Yokai kim</h4>
+            <h6 class="user-component__subtitle">+ 787-472-5619</h6>
+          </div>
+        </div>
+        <div class="user-component__column">
+          <i class="fa-solid fa-envelope-open-text fa-2x"></i>
+        </div>
+      </div>
+      <!-- Main-Screen icon-row -->
       <div class="icon-row">
         <div class="icon-row__icon">
-          <i class="fas fa-qrcode"></i>
-          <span>QR Code</span>
+          <i class="fa-regular fa-calendar-check"></i>
+          <span>Calendar</span>
         </div>
         <div class="icon-row__icon">
-          <i class="far fa-address-book"></i>
-          <span>Add by Contacts</span>
+          <i class="fa-regular fa-hard-drive"></i>
+          <span>Talk Drive</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fas fa-fingerprint"></i>
-          <span>Add by ID</span>
+          <i class="fa-regular fa-face-dizzy"></i>
+          <span>Emoticons</span>
         </div>
         <div class="icon-row__icon">
-          <i class="far fa-envelope"></i>
-          <span>Invite</span>
+          <i class="fa-solid fa-brush"></i>
+          <span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-address-card"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fa-regular fa-comments"></i>
+          <span>Openchat</span>
         </div>
       </div>
-      <!-- Recommended-Freinds -->
-      <div class="recommended-friends">
-        <h6 class="recommended-friends__title">Recommended Friends</h6>
-        <span>You have no recommended friends.</span>
-      </div>
-      <!-- Open-Chat -->
-      <div class="open-chat">
-        <div class="open-chat__header">
-          <h4>Open Chat</h4>
-          <span>Go to Openchat Home</span>
-          <i class="fas fa-chevron-right fa-xs"></i>
-        </div>
-        <div class="open-post">
-          <div class="open-post__column">
-            <h5 class="open-post__title">#BTS</h5>
-            <h6 class="open-post__hashtags">#bts#army#friends</h6>
-            <div class="open-post__members">
+      <div class="more-suggenstions">
+        <h4 class="more-suggenstions__title">Suggestions</h4>
+        <div class="more-suggenstions__icons">
+          <div class="more-suggenstions__icon">
+            <div class="more-suggenstions__icon-image">
               <img
-                src="https://www.shutterstock.com/image-vector/straw-hat-pirate-logo-isolated-600w-1779101537.jpg"
-                alt="One_piece LOGO"
-              />
-              <span class="open-post__member-count">802 members</span>
-              <div class="divider"></div>
-              <span class="open-post__member-status">Active</span>
-            </div>
-          </div>
-          <div class="open-post__column">
-            <div class="open-post__photo">
-              <img
-                src="https://media.pitchfork.com/photos/5b05c65155ea5e2348702233/1:1/w_600/BTS%20Tear.jpg"
+                src="https://download.beer/wp-content/uploads/2021/03/kakaostory-logo-0x0.png"
                 alt=""
               />
-              <div class="open-post__heart-count">
-                <i class="fa-solid fa-heart"></i>
-                <span>326</span>
-              </div>
             </div>
+            <span class="more-suggenstions__icon-text">Kokoa Story</span>
           </div>
         </div>
       </div>
@@ -130,4 +130,21 @@
       </ul>
     </nav>
   </body>
+  <!-- 폰트어썸이 설치가 안됐는지 확인
+  https://www.webdevsplanet.com/post/fontawesome-icons-not-showing -->
+  <!-- <script>
+    window.onload = function () {
+      var span = document.createElement("span");
+
+      span.className = "fa";
+      span.style.display = "none";
+      document.body.insertBefore(span, document.body.firstChild);
+
+      alert(
+        window.getComputedStyle(span, null).getPropertyValue("font-family")
+      );
+
+      document.body.removeChild(span);
+    };
+  </script> -->
 </html>
