@@ -16,3 +16,7 @@
     width: 50px;
     height: 50px;
 }
+
+.more-suggenstions__icons {
+    display: flex;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Setting - Yokia Clone</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/7b2bd2d778.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- status-bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>23:17</span>
+      </div>
+      <div class="status-bar__column">
+        <span>70%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- screen-header -->
+    <header class="screen-header"></header>
+    <!-- Friends-Display-Link -->
+    <!-- Chats-Screen -->
+    <!-- Main-Screen-->
+    <main class="main-screen"></main>
+    <!-- Navigation -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <!-- <i class="fa-solid fa-user fa-2x"></i> -->
+            <i class="fa-regular fa-user fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="fa-regular fa-comment fa-2x"></i>
+            <!-- <i class="fa-solid fa-comment fa-2x"></i> -->
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <span class="nav__point"> </span>
+            <i class="fa-solid fa-ellipsis fa-2x"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+  <!-- 폰트어썸이 설치가 안됐는지 확인
+  https://www.webdevsplanet.com/post/fontawesome-icons-not-showing -->
+  <!-- <script>
+    window.onload = function () {
+      var span = document.createElement("span");
+
+      span.className = "fa";
+      span.style.display = "none";
+      document.body.insertBefore(span, document.body.firstChild);
+
+      alert(
+        window.getComputedStyle(span, null).getPropertyValue("font-family")
+      );
+
+      document.body.removeChild(span);
+    };
+  </script> -->
+</html>
