@@ -1,0 +1,21 @@
+.alt-header {
+    padding: 40px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* [justify-content: space-between]이 글자 수에 따라서 배열이 중앙 정열이 안된다는 점 지난 강의에서 들었던거 기억 하시죠? auto를 쓰시면 글자 수와 무관하게 중앙 정열이 됩니다. */
+}
+
+.alt-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.alt-header__column:first-child {
+    margin-right:  auto;
+}
+
+.alt-header__column:last-child {
+    margin-left: auto;
+}
