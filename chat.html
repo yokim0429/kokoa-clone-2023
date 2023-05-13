@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onepiece Bepo - Yokia Clone</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
+    <script
+      src="https://kit.fontawesome.com/7b2bd2d778.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="chat-screen">
+    <!-- Status-Bar -->
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>23:17</span>
+      </div>
+      <div class="status-bar__column">
+        <span>70%</span>
+        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+    <!-- Alt-Header -->
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="more.html">
+          <!-- [ < ] 앵글 뒤로가기 아이콘 버튼 -->
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Onepiece Bepo</h1>
+      </div>
+      <div class="alt-header__column">
+        <span>
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        </span>
+        <span>
+          <i class="fa-solid fa-bars fa-2x"></i>
+        </span>
+      </div>
+    </header>
+    <!-- Screen-header -->
+    <!-- Main-Screen-->
+    <main class="main-screen"></main>
+    <!-- Navigation -->
+  </body>
+  <!-- 폰트어썸이 설치가 안됐는지 확인
+  https://www.webdevsplanet.com/post/fontawesome-icons-not-showing -->
+  <!-- <script>
+    window.onload = function () {
+      var span = document.createElement("span");
+
+      span.className = "fa";
+      span.style.display = "none";
+      document.body.insertBefore(span, document.body.firstChild);
+
+      alert(
+        window.getComputedStyle(span, null).getPropertyValue("font-family")
+      );
+
+      document.body.removeChild(span);
+    };
+  </script> -->
+</html>
