@@ -1,21 +1,21 @@
 .recommended-friends {
     margin: 25px 0px;
     padding: 25px 0px;
-    border-bottom: var(--main-border);
     border-top: var(--main-border);
+    border-bottom: var(--main-border);
 }
 
 .recommended-friends__title {
-    font-size: 15px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
 }
 
 .recommended-friends span {
-    margin: 100px 0px;
-    text-align: center;
+    margin: 100px 0;
     display: block;
-    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
     font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .open-chat__header {
@@ -26,7 +26,7 @@
 }
 
 .open-chat__header span {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .open-post {
@@ -36,8 +36,8 @@
 }
 
 .open-post__title {
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-weight: 600;
+    margin-bottom: 7px;
 }
 
 .open-post__hashtags {
@@ -46,14 +46,14 @@
 }
 
 .open-post__members {
+    margin-top: 7px;
     display: flex;
     align-items: center;
-    margin-top: 7px;
 }
 
 .open-post__members img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     margin-right: 5px;
 }
@@ -62,12 +62,12 @@
     opacity: 0.5;
     font-size: 14px;
 }
-/* .open-post__members .divider 이렇게 작성하는 이유는 코드 상에 또 다른 divider가 있을 수 있는데, 이렇게 하면 open-post__members 안에 있는 divider만 적용이 돼 */
+
 .open-post__members .divider {
     width: 2px;
     height: 15px;
     margin: 0 5px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 .open-post__member-status {
@@ -79,13 +79,13 @@
 }
 
 .open-post__photo img {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     border-radius: 10px;
 }
 
 .open-post__heart-count {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     padding: 5px;
     border-radius: 20px;

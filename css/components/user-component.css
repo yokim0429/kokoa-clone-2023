@@ -1,61 +1,54 @@
 .user-component {
     justify-content: space-between;
-}
-.user-component,
-.user-component__column:first-child {
-  display: flex;
-  align-items: center;
-}
-
-.user-component__avatar {
+  }
+  
+  .user-component,
+  .user-component__column:first-child {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-component__avatar {
     width: 70px;
     height: 70px;
     border-radius: 30px;
     margin-right: 20px;
-    /* 사진 크기 변경시, 텍스처 그대로 유지하기 위해
-    object-fit: cover; */
-    object-fit: cover;
-}
-
-.user-component__title {
-    font-weight: 900;
-    font-size: 19px;
-}
-
-.user-component__subtitle {
+  }
+  
+  .user-component__title {
+    font-weight: 600;
+    font-size: 22px;
+  }
+  
+  .user-component__subtitle {
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 17px;
     color: rgba(0, 0, 0, 0.5);
-}
-
-.user-component__avatar--xl {
+  }
+  
+  .user-component__avatar--xl {
     width: 80px;
     height: 80px;
-    border-radius: 35px;
-    margin-right: 20px;
-    /* 사진 크기 변경시, 텍스처 그대로 유지하기 위해
-    object-fit: cover; */
-    object-fit: cover;
-}
-
-.user-component__avatar--sm {
+  }
+  
+  .user-component__avatar--sm {
     width: 60px;
     height: 60px;
-    border-radius: 23px;
-}
-
-.user-component__title--not-bold {
-    font-weight: 500;
-}
-
-.user-component__column:last-child {
+    border-radius: 25px;
+  }
+  
+  .user-component__title--not-bold {
+    font-weight: 400;
+  }
+  
+  .user-component__column:last-child {
     color: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.user-component__time {
+  }
+  
+  .user-component__time {
     margin-bottom: 10px;
     display: block;
-}
+  }
