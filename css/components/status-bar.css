@@ -2,10 +2,6 @@
     display: flex;
     justify-content: center;
     padding: 5px 3px;
-    /* position: fixed; */
-    width: 100%;
-    /* 니코는 매직라인 border-box을 왜 썼을까?*/
-    box-sizing: border-box;
 }
 
 .status-bar__column {
@@ -27,6 +23,6 @@
     align-items: center;
 }
 
-.status-bar__column .fa-battery-three-quarters {
+.status-bar__column .fa-battery-full {
     margin: 0px 5px;
 }
