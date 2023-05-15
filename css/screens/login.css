@@ -4,60 +4,52 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: 800;
-}
-
-.welcome-header__title {
-    margin-bottom: 30px;
+  }
+  .welcome-header__title {
+    margin-bottom: 20px;
     font-size: 25px;
-}
-
-.welcome-header__text {
+  }
+  .welcome-header__text {
     width: 60%;
-    opacity: 0.5;
-}
-
-#login-form {
+    opacity: 0.7;
+  }
+  
+  #login-form {
     display: flex;
     flex-direction: column;
     margin: 0px 30px;
-}
-
-#login-form input {
+  }
+  
+  #login-form input {
     border: none;
-    padding: 20px 0px;
-    font-size: 19px;
-    
-    margin-bottom: 20px;
-    
-}
-
-/* input type이 submit이 아닐때 border 스타일과 transition을 적용하기, [ ]는 특성 선택자(attribute selector)이다. */
-#login-form input:not([type="submit"]) {
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 15px 0px;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+  
+  #login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     transition: border-color 0.3s ease-in-out;
-}
-
-#login-form input::placeholder {
-    color: rgba(0, 0, 0, 0.3);
-}
-
-#login-form input:focus {
+  }
+  
+  #login-form input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  #login-form input:focus {
     border-color: var(--yellow);
-}
-
-#login-form input[type="submit"] {
+  }
+  
+  #login-form input[type="submit"] {
     background-color: var(--yellow);
     cursor: pointer;
-    font-size: 21px;
     padding: 20px 0px;
-    border-radius: 10px;
-}
-
-#login-form a {
+    border-radius: 5px;
+  }
+  
+  #login-form a {
     text-align: center;
     text-decoration: none;
-    /* inherit 상속하다 "이 경우에는 a(anchor)가 색상을 아버지로부터 상속받아 오는거야 default 색은 블랙" */
     color: inherit;
-    font-size: 15px;
-}
+    font-size: 13px;
+  }
