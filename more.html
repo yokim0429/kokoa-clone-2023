@@ -1,166 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More - Yokia Clone</title>
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
-    <script
-      src="https://kit.fontawesome.com/7b2bd2d778.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <!-- status-bar -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>23:17</span>
+        <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>70%</span>
-        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-    <!-- screen-header -->
+
     <header class="screen-header">
       <h1 class="screen-header__title">More</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
-        <!-- <span>
-          <i class="fa-regular fa-comment fa-lg"></i>
-        </span> -->
         <span><i class="fas fa-music fa-lg"></i></span>
-        <!-- setting.html 링크 -->
-        <span>
-          <a href="settings.html">
-            <i class="fas fa-cog fa-lg"></i>
-          </a>
-        </span>
+        <span
+          ><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a
+        ></span>
       </div>
     </header>
-    <!-- Friends-Display-Link -->
-    <!-- Chats-Screen -->
-    <!-- Main-Screen-->
+
     <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="screenshots/profile0429.png"
+            src="https://avatars3.githubusercontent.com/u/3612017"
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">Yokai kim</h4>
-            <h6 class="user-component__subtitle">+ 787-472-5619</h6>
+            <h4 class="user-component__title">Yokai Kim</h4>
+            <h6 class="user-component__subtitle">+ 787-475-3257</h6>
           </div>
         </div>
         <div class="user-component__column">
-          <i class="fa-solid fa-envelope-open-text fa-2x"></i>
+          <i class="far fa-comment-alt fa-2x"></i>
         </div>
       </div>
-      <!-- Main-Screen icon-row -->
       <div class="icon-row">
         <div class="icon-row__icon">
-          <i class="fa-regular fa-calendar-check"></i>
+          <i class="far fa-calendar"></i>
           <span>Calendar</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fa-regular fa-hard-drive"></i>
-          <span>Talk Drive</span>
-        </div>
-        <div class="icon-row__icon">
-          <i class="fa-regular fa-face-dizzy"></i>
+          <i class="far fa-smile-beam"></i>
           <span>Emoticons</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fa-solid fa-brush"></i>
+          <i class="fas fa-paint-roller"></i>
           <span>Themes</span>
         </div>
         <div class="icon-row__icon">
-          <i class="fa-regular fa-address-card"></i>
+          <i class="fas fa-file-invoice-dollar"></i>
           <span>Account</span>
         </div>
-        <div class="icon-row__icon">
-          <i class="fa-regular fa-comments"></i>
-          <span>Openchat</span>
-        </div>
       </div>
-      <div class="more-suggenstions">
-        <h4 class="more-suggenstions__title">Suggestions</h4>
-        <div class="more-suggenstions__icons">
-          <div class="more-suggenstions__icon">
-            <div class="more-suggenstions__icon-image">
-              <img
-                src="https://download.beer/wp-content/uploads/2021/03/kakaostory-logo-0x0.png"
-                alt=""
-              />
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
-            <span class="more-suggenstions__icon-text">Kokoa Story</span>
+            <span class="more-suggestions__icon-text">Yokai Story</span>
           </div>
-          <div class="more-suggenstions__icon">
-            <div class="more-suggenstions__icon-image">
-              <img
-                src="https://download.beer/wp-content/uploads/2021/03/kakaostory-logo-0x0.png"
-                alt=""
-              />
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
-            <span class="more-suggenstions__icon-text">Kokoa Story</span>
+            <span class="more-suggestions__icon-text">Yokai Story</span>
           </div>
         </div>
       </div>
     </main>
-    <!-- Navigation -->
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <!-- <i class="fa-solid fa-user fa-2x"></i> -->
-            <i class="fa-regular fa-user fa-2x"></i>
-          </a>
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
-            <!-- <i class="fa-solid fa-comment fa-2x"></i> -->
+            <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-          </a>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav__dot"> </span>
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
-          </a>
+          <a class="nav__link" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
         </li>
       </ul>
     </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <!-- 폰트어썸이 설치가 안됐는지 확인
-  https://www.webdevsplanet.com/post/fontawesome-icons-not-showing -->
-  <!-- <script>
-    window.onload = function () {
-      var span = document.createElement("span");
-
-      span.className = "fa";
-      span.style.display = "none";
-      document.body.insertBefore(span, document.body.firstChild);
-
-      alert(
-        window.getComputedStyle(span, null).getPropertyValue("font-family")
-      );
-
-      document.body.removeChild(span);
-    };
-  </script> -->
 </html>

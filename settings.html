@@ -1,126 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Setting - Yokia Clone</title>
-
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="path/to/fontawesome.min.css" />
-    <script
-      src="https://kit.fontawesome.com/7b2bd2d778.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Settings - Yokia Clone</title>
   </head>
   <body>
-    <!-- status-bar -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>23:17</span>
+        <span>18:43</span>
       </div>
       <div class="status-bar__column">
         <span>70%</span>
-        <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
+        <i class="fas fa-battery-full fa-lg"></i>
         <i class="fas fa-bolt"></i>
       </div>
     </div>
-    <!-- Setting 스크린 alt-header와 status-bar가 중첩됨
-    https://thrillfighter.tistory.com/480 -->
-    <!-- 단축키 = header.alt-header>div.alt-header__column*3 -->
+
     <header class="alt-header">
       <div class="alt-header__column">
         <a href="more.html">
-          <!-- [ < ] 앵글 뒤로가기 아이콘 버튼 -->
-          <i class="fa-solid fa-angle-left fa-2x"></i>
+          <i class="fas fa-angle-left fa-3x"></i>
         </a>
       </div>
       <div class="alt-header__column">
         <h1 class="alt-header__title">Settings</h1>
       </div>
       <div class="alt-header__column">
-        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        <span><i class="fas fa-search fa-lg"></i></span>
       </div>
     </header>
-    <!-- screen-header -->
-    <header class="screen-header"></header>
-    <!-- Friends-Display-Link -->
-    <!-- Chats-Screen -->
-    <!-- Main-Screen-->
+
     <main class="main-screen">
       <ul class="settings-list">
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fa-solid fa-bullhorn"></i>
+            <i class="fas fa-bullhorn"></i>
             <span>Notices</span>
           </div>
           <div class="settings__setting-column"></div>
         </li>
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fa-solid fa-flask"></i>
-            <span>KoKoa Lab</span>
+            <i class="fas fa-flask"></i>
+            <span>Yokai Lab</span>
           </div>
           <div class="settings__setting-column"></div>
         </li>
         <li class="settings__setting">
           <div class="settings__setting-column">
-            <i class="fa-solid fa-circle-exclamation"></i>
+            <i class="fas fa-info-circle"></i>
             <span>Version</span>
           </div>
           <div class="settings__setting-column">Latest Version</div>
         </li>
       </ul>
     </main>
-    <!-- Navigation -->
+
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <!-- <i class="fa-solid fa-user fa-2x"></i> -->
-            <i class="fa-regular fa-user fa-2x"></i>
-          </a>
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">1</span>
-            <i class="fa-regular fa-comment fa-2x"></i>
-            <!-- <i class="fa-solid fa-comment fa-2x"></i> -->
+            <i class="far fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-          </a>
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav__dot"> </span>
-            <i class="fa-solid fa-ellipsis fa-2x"></i>
-          </a>
+          <a class="nav__link" href="more.html"
+            ><i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
         </li>
       </ul>
     </nav>
+
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <!-- 폰트어썸이 설치가 안됐는지 확인
-  https://www.webdevsplanet.com/post/fontawesome-icons-not-showing -->
-  <!-- <script>
-    window.onload = function () {
-      var span = document.createElement("span");
-
-      span.className = "fa";
-      span.style.display = "none";
-      document.body.insertBefore(span, document.body.firstChild);
-
-      alert(
-        window.getComputedStyle(span, null).getPropertyValue("font-family")
-      );
-
-      document.body.removeChild(span);
-    };
-  </script> -->
 </html>

@@ -21,10 +21,10 @@
 @import "screens/chat.css";
 
 body {
-    color: #4f4e4e;
-    font-family: "Open Sans", sans-serif;
+  color: #2e363e;
+  font-family: "Open Sans", sans-serif;
 }
 
 .main-screen {
-    padding: 0px var(--horizontal-space);
+  padding: 0px var(--horizontal-space);
 }
