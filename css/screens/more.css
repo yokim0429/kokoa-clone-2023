@@ -38,3 +38,9 @@
   font-size: 32px;
   color: white;
 }
+
+.more-suggestions__icon-image img {
+  width: 60px;
+  height: 60px;
+  
+}
